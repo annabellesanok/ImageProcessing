@@ -1,0 +1,67 @@
+To use our GUI:
+
+- To start a new project, use the button that says New Project. You will then be prompted to
+enter a name for your project, and then a height and width. These must be words for the name
+and numbers for height and width.
+
+- To load a project, press the Load Project button and use the file chooser to select a file
+where you have previously saved a collage project. Rendering a loaded project in our GUI isn't
+working, but all the functionality is working properly, and this command can be properly executed
+in the text view mode. 
+
+- To add an image to a Layer, press that button while editng the layer you'd like to add it to
+and use the file chooser to pick what image to add. Then you will be prompted to enter an x and y
+position for this image on the layer. The image will be displayed and to see the entire project,
+you can select a filter. The user can add jpgs, pngs, and ppms.
+
+- To save an image, press the Save Image button while editing the layer with the image you want to
+save. Then use the file chooser to choose where to save and input the name that the image
+should be saved as and then press save.
+
+- Save project can be done by pressing that button and then again picking a name and location
+for the project to be saved as using the file chooser that comes up.
+
+- To leave the program, either use the exit button or the X in the top right corner.
+
+- To add a layer, press that button and input the name of the new layer.
+
+- To select which layer to view or work on, use the buttons that are labeled with each layer
+name and click which is desired.
+
+- To set a filter, use the filter buttons and select one to add to the layer you are currently on.
+
+- The image can be viewed in the image panel.
+
+
+
+
+ To use the text-view version of our program:
+
+ - To start a new project, use the command: new-project name height width, where height and
+ width are integers representing the height and width of the project
+
+ - To load a project, use the command: load-project projectPath, where the file to be loaded has to
+ be a previously-saved project file
+
+ - To add a layer, use the command: add-layer name, where you can add a layer of that name to the
+ current project
+
+ - To add an image, use the command: add-image-to-layer layerName imagePath xposn yposn, where the
+ layerName is the layer that you want to add the image to, the imagePath is the path of the image
+ you want to add -- can be either a jpeg, png, or ppm image, and the x and y posn are ints
+ representing the location of the image on the project, where x=0 and y=0 means that the top left
+ corner of the image will be placed in the top left corner of the project
+
+ - To set a filter, use the command: set-filter layername filtername, to set the layer of the
+ provided name to the provided filter. The filters that this program supports are brighten-intensity,
+ darken-intensity, darken-luma, brighten-luma, brighten-value, darken-value, red-component,
+ green-component, blue-component, multiply, screen, difference, and normal
+
+ - To save an image, use the command: save-image imagename.ppm layername, where you can save
+ the image on the specified layer as the type of image that was initially loaded (a jpg, ppm, or png)
+ under a chosen name
+
+ - To save a project, use the command: save-project projectname, where you can enter a name to
+ save your project under.
+
+ - To leave the program, use the command "quit" at any point, and the program will be terminated

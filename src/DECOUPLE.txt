@@ -1,0 +1,19 @@
+The files we were able to just leave with the ImageViewImpl class (our text UI) and the JFrameView
+class (our GUI) in a new project were the interfaces Project, Layer, IPixel, ImageController,
+Features and FilterCommand.
+
+Each of these are interfaces. Project, Layer, and IPixel are related to
+the model while ImageController and Features are controller interfaces and FilterCommand is an
+interface related to the command design pattern for filters. Access to the model here was
+necessary to render the pixels that were changing in the model as layers and images were added.
+We used the IPixel interface in the private helper functions in the GUI that were used
+to render the current composite image to the viewer. The last thing needed to make the code
+compile was the Utils class for reading images. The reason this is necessary is that the view
+needed a way to delegate to another class to get information from the image chosen from its
+FileChooser. We left this model.ImageUtil class as a class rather than an interface, because the user
+should only be able to choose image formats that our processor supports (supported by our reading
+image methods, that would be added to the util class if we decided to support more image types).
+Also, an image wouldn't necessarily have an immediate way to properly dispatch to the correct
+method (i.e. if we had an interface with the method readImage, each image isn't a class that can
+implement this method in different ways).
+

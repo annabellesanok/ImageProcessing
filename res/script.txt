@@ -1,0 +1,39 @@
+new-project theProjectName 100 150
+add-layer firstLayerName
+add-image-to-layer firstLayerName flowers.png 0 0
+set-filter firstLayerName red-component
+save-image firstLayer.png firstLayerName
+add-image-to-layer firstLayerName mountains.jpg 50 20
+set-filter firstLayerName brighten-luma
+save-image firstLayerAgain.jpg firstLayerName
+add-layer secondLayerName
+add-image-to-layer secondLayerName tako.ppm 0 0
+set-filter secondLayerName blue-component
+save-image secondLayer.ppm secondLayerName
+add-layer thirdLayerName
+add-image-to-layer thirdLayerName tako.ppm 0 0
+set-filter thirdLayerName green-component
+save-image thirdlayer.ppm thirdLayerName
+set-filter thirdLayerName multiply
+save-image thirdLayerMultiply.ppm thirdLayerName
+set-filter thirdLayerName screen
+save-image thirdLayerScreen.ppm thirdLayerName
+set-filter thirdLayerName difference
+save-image thirdLayerDifference.ppm thirdLayerName
+set-filter thirdLayerName brighten-intensity
+save-image thirdLayerBrightenInt.ppm thirdLayerName
+set-filter thirdLayerName brighten-luma
+save-image thirdLayerBrightenLum.ppm thirdLayerName
+set-filter thirdLayerName brighten-value
+save-image thirdLayerBrightenVal.ppm thirdLayerName
+set-filter thirdLayerName brighten-intensity
+save-image thirdLayerBrightenInt.ppm thirdLayerName
+add-layer fourthLayerName
+add-image-to-layer fourthLayerName tako.ppm 102 140
+set-filter fourthLayerName darken-intensity
+save-image fourthLayerDarkenInt.ppm fourthLayerName
+set-filter fourthLayerName darken-luma
+save-image fourthLayerDarkenLum.ppm fourthLayerName
+set-filter fourthLayerName darken-value
+save-image fourthLayerDarkenVal.ppm fourthLayerName
+save-project saveMyProject

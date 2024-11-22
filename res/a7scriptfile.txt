@@ -1,0 +1,14 @@
+new-project project
+add-layer l1
+add-image-to-layer l1 flowers.png 0 0
+set-filter l1 difference
+add-layer l2
+add-image-to-layer l2 Image1.ppm 50 40
+set-filter l2 green-component
+add-layer l3
+add-image-to-layer l3 mountains.jpg 0 75
+set-filter l2 difference
+add-layer l4
+add-image-to-layer l4 floweres.png 125 125
+set-filter l4 red-component
+save-image image.png l4
